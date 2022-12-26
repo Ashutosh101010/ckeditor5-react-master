@@ -73,8 +73,10 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
-			'Mathtype',
+
 			'|',
+			'fontSize',
+			'fontFamily',
 			'bold',
 			'italic',
 			'link',
@@ -90,9 +92,10 @@ ClassicEditor.defaultConfig = {
 			'mediaEmbed',
 			'undo',
 			'redo',
-			'font',
-			'fontFamily',
 			'uploadImage',
+			'|',
+			'Mathtype',
+			'ChemType'
 		]
 	},
 	image: {
