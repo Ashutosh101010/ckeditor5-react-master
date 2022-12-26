@@ -32,6 +32,8 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import Mathtype from '@wiris/mathtype-ckeditor5';
 import Font from '../font/font';
 import FontFamily from '../font/fontfamily';
+import ImageUploadPlugin from '@ckeditor/ckeditor5-image/src/imageupload'
+import  CloudServicesPlugin  from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -61,7 +63,9 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Mathtype,
 	Font,
-	FontFamily
+	FontFamily,
+	ImageUploadPlugin,
+	CloudServicesPlugin
 ];
 
 // Editor configuration.
@@ -87,7 +91,8 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'font',
-			'fontFamily'
+			'fontFamily',
+			'uploadImage',
 		]
 	},
 	image: {
