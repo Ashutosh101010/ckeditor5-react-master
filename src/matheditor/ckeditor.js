@@ -70,6 +70,87 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	fontSize: {
+		options: [
+			6,
+			8,
+			10,
+			12,
+			'default',
+			16,
+			18,
+			20,
+			22,
+			24,
+			26,
+			28,
+			30,
+			32,
+			34,
+			36,
+			38,
+			40,
+			42,
+			44,
+			46,
+			48,
+			50,
+		],
+		supportAllValues: true
+	},
+	fontColor: {
+		colors: [
+			{
+				color: 'hsl(0, 0%, 0%)',
+				label: 'Black'
+			},
+			{
+				color: 'hsl(0, 0%, 30%)',
+				label: 'Dim grey'
+			},
+			{
+				color: 'hsl(0, 0%, 60%)',
+				label: 'Grey'
+			},
+			{
+				color: 'hsl(0, 0%, 90%)',
+				label: 'Light grey'
+			},
+			{
+				color: 'hsl(0, 0%, 100%)',
+				label: 'White',
+				hasBorder: true
+			},
+
+			// ...
+		]
+	},
+	fontBackgroundColor: {
+		colors: [
+			{
+				color: 'hsl(0, 75%, 60%)',
+				label: 'Red'
+			},
+			{
+				color: 'hsl(30, 75%, 60%)',
+				label: 'Orange'
+			},
+			{
+				color: 'hsl(60, 75%, 60%)',
+				label: 'Yellow'
+			},
+			{
+				color: 'hsl(90, 75%, 60%)',
+				label: 'Light green'
+			},
+			{
+				color: 'hsl(120, 75%, 60%)',
+				label: 'Green'
+			},
+
+			// ...
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
@@ -82,6 +163,8 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'indent',
 			'outdent',
