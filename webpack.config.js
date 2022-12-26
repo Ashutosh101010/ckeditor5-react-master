@@ -9,7 +9,7 @@
 
 const path = require( 'path' );
 const webpack = require( 'webpack' );
-const { bundler ,styles} = require( '@ckeditor/ckeditor5-dev-utils' );
+const { bundler, styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 const TerserPlugin = require( 'terser-webpack-plugin' );
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 module.exports = {
@@ -26,13 +26,16 @@ module.exports = {
 		}
 	},
 
-	entry: path.join( __dirname, 'src', 'index.js' ),
+	entry: {
+		ckeditor: path.join( __dirname, 'src', 'index.js' ),
+		classEditor: path.join( __dirname, 'src', 'matheditor/ckeditor.js' )
+	},
 
 	output: {
 		library: 'CKEditor',
 
 		path: path.join( __dirname, 'dist' ),
-		filename: 'ckeditor.js',
+		filename: '[name].js',
 		libraryTarget: 'umd'
 	},
 

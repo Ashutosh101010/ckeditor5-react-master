@@ -18,7 +18,7 @@ import FocusTracker from '@ckeditor/ckeditor5-utils/src/focustracker';
 import FocusCycler from '@ckeditor/ckeditor5-ui/src/focuscycler';
 import KeystrokeHandler from '@ckeditor/ckeditor5-utils/src/keystrokehandler';
 import removeButtonIcon from '@ckeditor/ckeditor5-core/theme/icons/eraser.svg';
-import '../../theme/fontcolor.css';
+import '../theme/fontcolor.css';
 
 /**
  * A class which represents a view with the following sub–components:

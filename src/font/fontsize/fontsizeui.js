@@ -15,8 +15,8 @@ import { createDropdown, addListToDropdown } from '@ckeditor/ckeditor5-ui/src/dr
 import { normalizeOptions } from './utils';
 import { FONT_SIZE } from '../utils';
 
-import fontSizeIcon from '../../theme/icons/font-size.svg';
-import '../../theme/fontsize.css';
+import fontSizeIcon from '../theme/icons/font-size.svg';
+import '../theme/fontsize.css';
 
 /**
  * The font size UI plugin. It introduces the `'fontSize'` dropdown.

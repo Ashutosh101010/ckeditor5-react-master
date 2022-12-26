@@ -31,7 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation'
 import Mathtype from '@wiris/mathtype-ckeditor5';
 import Font from '../font/font';
-import { FontFamily } from '../font/fontfamilyn';
+import FontFamily from '../font/fontfamily';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
