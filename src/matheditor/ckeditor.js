@@ -34,6 +34,8 @@ import Font from '../font/font';
 import  CloudServices  from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import FontSize from '../font/fontsize';
 import FontFamily from '../font/fontfamily';
+import FontColor from '../font/fontcolor';
+import FontBackgroundColor from '../font/fontbackgroundcolor';
 
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -66,6 +68,8 @@ ClassicEditor.builtinPlugins = [
 	Mathtype,
 	Font,
 	FontSize,FontFamily,
+	FontColor,
+	FontBackgroundColor,
 	CloudServices
 ];
 
