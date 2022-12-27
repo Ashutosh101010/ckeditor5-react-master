@@ -31,7 +31,6 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation'
 import Mathtype from '@wiris/mathtype-ckeditor5';
 import Font from '../font/font';
-import FontFamily from '../font/fontfamily';
 import  CloudServices  from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
 
@@ -64,7 +63,6 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Mathtype,
 	Font,
-	FontFamily,
 	CloudServices
 ];
 
